@@ -1,0 +1,13 @@
+<ng-container *ngIf="superhero">
+    <div class="card">
+        
+        <!-- evenement on error enclanche la méthode permettant de définir un nouveau src. -->
+        <img style="width: 100%" [src]="superhero.image" (error)="setDefaultImage(image)" #image>
+        <div class="card-container">
+        <h2>{{ superhero.name }}</h2>
+            <p>Points de vie : {{ superhero.durability }}</p>
+            <p>Force : {{ superhero.strength }}</p>
+            <p>Vitesse : {{ superhero.speed }}</p>
+        </div>
+    </div>
+</ng-container>

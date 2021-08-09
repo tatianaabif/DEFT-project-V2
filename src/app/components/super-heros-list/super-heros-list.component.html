@@ -1,0 +1,30 @@
+
+<h1>Game Super Héros DEFT</h1>
+<div >
+    <div>
+        <ol>
+            <h2>Joueur 1</h2>
+            <li *ngFor="let id of ids_team1">
+                <!-- <app-heros-details [heros]="heros"></app-heros-details> -->
+                <app-hero-card [id]="id">
+
+                </app-hero-card>
+            </li>
+        </ol>
+    </div>
+    <div>
+        <ol>
+            <h2>Joueur 2</h2>
+            <li *ngFor="let id2 of ids_team2">
+                <!-- <app-heros-details [heros]="heros"></app-heros-details> -->
+                <app-hero-card [id]="id2">
+
+                </app-hero-card>
+            </li>
+        </ol>
+    </div>
+</div>
+
+<!-- pour tester le on error card :  -->
+<!-- <app-hero-card [id]="290"></app-hero-card> -->
+
